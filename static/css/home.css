@@ -1,0 +1,82 @@
+/*
+	Name: CatFacts Galore!
+	Date: December 2012
+	Description: Simple Django webapp for distributing daily CatFacts
+	Version: 1.0
+	Author: Kevin Crane
+	Autor URI: http://thekevincrane.com
+*/
+
+/***** Global *****/
+/* Body */
+body {
+    background-image: url("/static/bg-sleepy-cat-blur.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+
+    color: #f5fadd;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    font-size: 100%; /* Base font size: 14px (87.5%). I MADE IT BIGGER BITCH */
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}	/* 14px */
+
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+
+/* Anchors */
+a:link, a:visited {
+    color: #f5fadd;
+    padding: 0 1px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8c9180;
+}
+a:hover, a:active {
+    background-color: #f5fadd;
+    color: #333333;
+    text-decoration: none;
+    text-shadow: 0px 2px 2px #333;
+}
+
+
+/***** Layout *****/
+
+/* Main background box */
+#home-content {
+    margin: 48px auto 48px auto;
+    background-color: #333333;
+    box-shadow: 0px 4px 3px #000000;
+    width: 75%;
+    height: 550px;
+    border-radius: 11px;
+    opacity: 0.8;
+}
+
+/* Title Banner */
+#banner {
+    padding-top: 16px;
+    text-align: center;
+    text-shadow: 0 5px 4px #000000;
+}
+#banner h1 {font-size: 3.571em; line-height: 0;}
+
+/* New User entry form */
+input {
+    font: 1.6em 'Trebuchet MS', sans-serif;
+}
+section #newuser-form {
+    width: 600px;
+    margin: auto;
+    padding: auto;
+}

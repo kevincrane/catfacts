@@ -1,0 +1,12 @@
+.default-font {
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+::selection {
+    background:#FFFFFF;
+    color: #333333;
+}
+::-moz-selection {
+    background:#FFFFFF;
+    color: #333333;
+}
