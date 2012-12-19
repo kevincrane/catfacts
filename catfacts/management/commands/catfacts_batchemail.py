@@ -2,6 +2,7 @@ from django.core.management.base import NoArgsCommand
 from django.core.mail import send_mail, EmailMultiAlternatives
 from random import choice
 from catfacts.models import Email_User, Fact
+import catfactssite.settings
 
 class Command(NoArgsCommand):
 
@@ -45,7 +46,8 @@ Kevin""" % (user.name, todays_fact)
 		<p>
 			<em><span style="font-size:8px;"><span style="font-size:10px;">If you wish to unsubscribe for some reason, please <a href="%s/unsubscribe?email=%s">click this link</a>. I'll miss you though. :(</em></span></span></p>
 	</body>
-</html>''' % (user.name, todays_fact, "http://localhost:8000", user.email)
+</html>''' % (user.name, todays_fact, catfactssite.settings.HOSTNAME, user.email)
+
             msg = EmailMultiAlternatives("Here's today's CatFact!",
                       text_message,
                       "CatFacts Galore <catfacts@thekevincrane.com>",

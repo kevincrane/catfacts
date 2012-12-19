@@ -1,0 +1,4 @@
+# Gitignore for Django project CatFacts site
+.idea
+catfacts_db
+*.pyc
