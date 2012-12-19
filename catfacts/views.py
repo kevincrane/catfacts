@@ -1,8 +1,8 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, render_to_response
-from django.core.urlresolvers import reverse
 from random import choice
 from django.utils import timezone
+from django.core.mail import send_mail
 import re
 import logging
 
@@ -67,6 +67,41 @@ def new_user(request):
             'error_message': "I couldn't tell if that was an email or phone number. Want to try that again?",
             })
 
+# Unsubscribe a user from CatFacts
+def unsub_user(request):
+    # Try to read the user's email address from GET info
+    try:
+        if not (request.GET.get('email')):
+            raise KeyError
+
+        # Set any users with this email address to invalid
+        email_address = request.GET['email']
+        user_list = Email_User.objects.filter(email=email_address)
+        for user in user_list:
+            user.valid = False
+            user.save()
+
+            # Send an email confirming the unsubscribe
+            message = '''Hello %s,
+Your email address, %s, has been unsubscribed from CatFacts Galore. We are very sorry to see you go.
+If this was a mistake, return to the home page to resubscribe.
+We miss you already. :(
+
+With love,
+Kevin
+''' % (user.name, user.email)
+            send_mail("Confirming CatFacts Galore unsubscription",
+                        message,
+                        "CatFacts Galore <catfacts@thekevincrane.com>",
+                        [user.email])
+            return render(request, "catfacts/home.html", {
+                'error_message': "Email %s removed from CatFacts Galore subscription. :(" % email_address,
+                })
+    except KeyError:
+        return render(request, "catfacts/home.html", {
+            'error_message': "No email address was present in that 'unsubscribe' request.",
+            })
+
 
 # TODO: Link so people can submit own CatFacts.
 #   - New view, just instructions, name box, bigger textbox
@@ -74,14 +109,9 @@ def new_user(request):
 #   - Generates very short email with common subject line and catfact as body
 #   - Profit
 
-# TODO: Make unsubscribe page
-#   - Send POST request to unsubscribe.html with email address
-#   - HTML: $email has been unsubscribed!
-#   - view: load models where email=$email, set valid=false
-
 # TODO: Set up daily cron job
-#   - import model from Python
-#   - Load, pick random fact, send email, repeat
+#   - http://stackoverflow.com/questions/3200001/using-crontab-with-django
+#   - python manage.py catfacts_batchemail
 
 # TODO: Maybe confirmation emails
 

@@ -8,4 +8,5 @@ urlpatterns = patterns('',
     url(r'^faq/$', views.faq, name='faq'),
     url(r'about/$', views.about, name='about'),
     url(r'^new_user/$', views.new_user, name='new_user'),
+    url(r'^unsubscribe/$', views.unsub_user, name='unsubscribe')
 )

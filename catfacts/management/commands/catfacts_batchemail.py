@@ -43,9 +43,9 @@ Kevin""" % (user.name, todays_fact)
 		<p>
 			<span style="font-size:14px;">Sent with love!</span></p>
 		<p>
-			<em><span style="font-size:8px;"><span style="font-size:10px;">I&#39;m still working on unsubscribe stuff, but send any email to </span></span></em><span style="font-size:8px;"><span style="font-size:10px;">kevincrane@gmail.com<em> if you want to stop receiving these for some horrifying reason or, even better, want to add your friends to the list!.</em></span></span></p>
+			<em><span style="font-size:8px;"><span style="font-size:10px;">If you wish to unsubscribe for some reason, please <a href="%s/unsubscribe?email=%s">click this link</a>. I'll miss you though. :(</em></span></span></p>
 	</body>
-</html>''' % (user.name, todays_fact)
+</html>''' % (user.name, todays_fact, "http://localhost:8000", user.email)
             msg = EmailMultiAlternatives("Here's today's CatFact!",
                       text_message,
                       "CatFacts Galore <catfacts@thekevincrane.com>",
