@@ -15,3 +15,12 @@ DATABASES = {
 }
 
 HOSTNAME = 'http://localhost:8000'
+
+# Additional locations of static files
+STATICFILES_DIRS = (
+    "/home/kevin/workspace/catfactssite/static",
+    )
+
+TEMPLATE_DIRS = (
+    "/home/kevin/workspace/catfactssite/templates",
+    )

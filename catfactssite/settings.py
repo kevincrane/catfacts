@@ -1,4 +1,5 @@
 # Django settings for catfactssite project.
+import os
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
@@ -20,7 +21,8 @@ DATABASES = {
     }
 }
 
-HOSTNAME = 'http://ec2-174-129-236-255.compute-1.amazonaws.com/catfacts'
+HOSTNAME = 'http://ec2-174-129-236-255.compute-1.amazonaws.com'
+HOSTED_ROOT = '/home/ubuntu/catfacts'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -66,7 +68,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    "/home/kevin/workspace/catfactssite/static",
+    HOSTED_ROOT + "/static",
 )
 
 # List of finder classes that know how to find static files in
@@ -103,7 +105,7 @@ ROOT_URLCONF = 'catfactssite.urls'
 WSGI_APPLICATION = 'catfactssite.wsgi.application'
 
 TEMPLATE_DIRS = (
-    "/home/kevin/workspace/catfactssite/templates",
+    HOSTED_ROOT + "/templates",
 )
 
 INSTALLED_APPS = (
@@ -154,4 +156,12 @@ LOGGING = {
 try:
     from settings_dev import *
 except ImportError:
-    pass
+    SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+    STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+    STATIC_URL = HOSTNAME + '/static/'
+    STATICFILES_FINDERS = (
+        'django.contrib.staticfiles.finders.FileSystemFinder',
+        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+        'django.contrib.staticfiles.finders.DefaultStorageFinder',
+        )
+    ADMIN_MEDIA_PREFIX = '/static/admin/'

@@ -15,7 +15,9 @@ logger = logging.getLogger(__name__)
 # Home page view
 def home(request):
     facts = Fact.objects.all()
-    context = {'rand_fact': choice(facts)}
+    if facts:
+        context = {'rand_fact': choice(facts)}
+    else: context = {}
     return render(request, 'catfacts/home.html', context)
 
 # FAQ page view
@@ -116,3 +118,4 @@ Kevin
 # TODO: Maybe confirmation emails
 
 # TODO: Javascript/AJAX for removing text boxes and only updating center of page on page change
+# TODO: use javascript to remove text box and put confirmation on new user email & warning of no working SMS

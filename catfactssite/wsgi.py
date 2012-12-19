@@ -14,6 +14,13 @@ framework.
 
 """
 import os
+import sys
+
+parent = '/home/ubuntu/catfacts'
+path = '/home/ubuntu/catfacts/catfactssite'
+if path not in sys.path:
+    sys.path.append(parent)
+    sys.path.append(path)
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "catfactssite.settings")
 
