@@ -13,7 +13,7 @@ class Email_User(models.Model):
         verbose_name_plural = 'Users (Email)'
 
     def __unicode__(self):
-        return self.name + "(" + self.email + ")"
+        return self.name + " (" + self.email + ")"
 
 
 # Contains info about the lucky CatFact SMS recipient
@@ -28,7 +28,7 @@ class Phone_User(models.Model):
         verbose_name_plural = 'Users (Phone)'
 
     def __unicode__(self):
-        return self.name + "(" + self.phone + ")"
+        return self.name + " (" + self.phone + ")"
 
 
 # Contains a list of all entered CatFacts

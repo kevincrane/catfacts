@@ -4,7 +4,8 @@
         <title>CatFacts Galore!</title>
 <!--TODO: remove this <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/main.css"/> -->
         <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/home.css"/>
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+        <link href="http://fonts.googleapis.com/css?family=Bevan" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     </head>
 
     <body id="index" class="home">
@@ -27,23 +28,25 @@
                 <p>Isn't that neat?!</p>
 
                 <p>Now <strong>CatFacts Galore</strong> delivers new facts to you everyday,
-                    straight to your email inbox or mobile phone!</p>
-                <p>Just type your name below, then either your email address or phone number,
+                    straight to your email inbox or mobile phone.</p>
+                <p>Just type your name below, then either your email address or US phone number,
                     and we'll get you all set up!</p>
 
                 <!-- Name/contact info -->
-                <form id="newuser-form">
+                <form id="newuser-form" action="/new_user/" method="post">
+                    {% csrf_token %}
                     <input type="text" name="name" placeholder="Your Name">
                     <input type="text" name="contact" placeholder="Email or Phone Number">
                     <input type="submit" value="Submit">
                 </form>
+                {% if error_message %}<p class="error"><strong>{{ error_message }}</strong></p>{% endif %}
             </section>
 
             <!-- Footer -->
             <footer id="nav-bar" class="body">
                 <nav><ul>
-                    <li class="active"><a href="HOMESOMETHING">Home</a></li>
-                    <li><a href="FAQSOMETHING">FAQ</a></li>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="faq">FAQ</a></li>
                     <li><a href="ABOUTSOMETHING">About</a></li>
                     <li><a href="http://thekevincrane.com">Blog</a></li>
                 </ul></nav>

@@ -16,7 +16,7 @@ body {
     -webkit-background-size:cover;
 
     color: #f5fadd;
-    font-family: 'Open Sans', Verdana, sans-serif;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;;
     font-size: 100%; /* Base font size: 14px (87.5%). I MADE IT BIGGER BITCH */
     line-height: 1.429;
     margin: 0;
@@ -35,6 +35,11 @@ h6 {font-size: 1em}	/* 14px */
 p {margin-bottom: 1.143em;}
 * p:last-child {margin-bottom: 0;}
 
+.error {
+    color: #ae323d;
+    padding-left: 30px;
+}
+
 /* Anchors */
 a:link, a:visited {
     color: #f5fadd;
@@ -44,9 +49,10 @@ a:link, a:visited {
 }
 a:hover, a:active {
     background-color: #f5fadd;
+    border-radius: 6px;
     color: #333333;
     text-decoration: none;
-    text-shadow: 0px 2px 2px #333;
+    text-shadow: 0 2px 2px #333;
 }
 
 
@@ -56,7 +62,7 @@ a:hover, a:active {
 #home-content {
     margin: 48px auto 48px auto;
     background-color: #333333;
-    box-shadow: 0px 4px 3px #000000;
+    box-shadow: 0 4px 3px #000000;
     width: 75%;
     height: 550px;
     border-radius: 11px;
@@ -69,14 +75,47 @@ a:hover, a:active {
     text-align: center;
     text-shadow: 0 5px 4px #000000;
 }
-#banner h1 {font-size: 3.571em; line-height: 0;}
+#banner h1 {font-size: 3.571em; line-height: 0; font-family: 'Bevan', Georgia, serif;}
 
 /* New User entry form */
 input {
     font: 1.6em 'Trebuchet MS', sans-serif;
 }
 section #newuser-form {
-    width: 600px;
+    width: 700px;
     margin: auto;
-    padding: auto;
+}
+
+/* Main text body */
+#main-body {
+    width: 84%;
+    margin: auto;
+}
+#fact {
+    width: 80%;
+    margin:auto;
+    font-style: italic;
+}
+#main-body p:nth-child(4) {
+    padding-top: 25px;
+    /*line-height: 0;*/
+    margin-bottom: -5px;
+}
+
+
+/* Bottom Navbar */
+#nav-bar {
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    line-height: 0;
+}
+#nav-bar ul {
+    list-style: none;
+    padding-top: 40px;
+}
+#nav-bar li {
+    display: inline;
+    border-radius: 6px;
+    padding: 0 16px;
 }
