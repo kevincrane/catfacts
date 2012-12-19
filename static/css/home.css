@@ -31,6 +31,11 @@ h4 {font-size: 1.286em}	/* 18px */
 h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}	/* 14px */
 
+h4 {
+    line-height: .5em;
+    text-shadow: 0 2px 2px #000000;
+}
+
 /* Paragraphs */
 p {margin-bottom: 1.143em;}
 * p:last-child {margin-bottom: 0;}
@@ -47,12 +52,21 @@ a:link, a:visited {
     text-decoration: none;
     text-shadow: 1px 1px 1px #8c9180;
 }
-a:hover, a:active {
+a:hover, a:active, .active {
     background-color: #f5fadd;
     border-radius: 6px;
     color: #333333;
     text-decoration: none;
     text-shadow: 0 2px 2px #333;
+}
+
+::selection {
+    background: #f5fadd; /* Safari */
+    color: #333333;
+}
+::-moz-selection {
+    background: #f5fadd; /* Firefox */
+    color: #333333;
 }
 
 
@@ -67,6 +81,7 @@ a:hover, a:active {
     height: 550px;
     border-radius: 11px;
     opacity: 0.8;
+    position: relative;
 }
 
 /* Title Banner */
@@ -96,18 +111,20 @@ section #newuser-form {
     margin:auto;
     font-style: italic;
 }
-#main-body p:nth-child(4) {
-    padding-top: 25px;
+/*#main-body p:nth-child(4) {*/
+    /*padding-top: 25px;*/
     /*line-height: 0;*/
-    margin-bottom: -5px;
-}
+    /*margin-bottom: -5px;*/
+/*}*/
 
 
 /* Bottom Navbar */
 #nav-bar {
     font-size: 2em;
     text-align: center;
-    position: relative;
+    position: absolute;
+    bottom: .6em;
+    left: 23%;
     line-height: 0;
 }
 #nav-bar ul {

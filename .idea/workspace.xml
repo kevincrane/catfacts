@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2646f19-7d19-49e9-bfc7-e2a15f80ee29" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catfacts_db" afterPath="$PROJECT_DIR$/catfacts_db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="b2646f19-7d19-49e9-bfc7-e2a15f80ee29" name="Default" comment="Updated CSS and HTML a little. &#10;User info boxes are functional for my victims to add themselves now.&#10;TODO list made so project has an approximate endpoint.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/catfacts/about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/catfacts/faq.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catfacts/models.py" afterPath="$PROJECT_DIR$/catfacts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catfacts/urls.py" afterPath="$PROJECT_DIR$/catfacts/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catfacts/views.py" afterPath="$PROJECT_DIR$/catfacts/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/home.css" afterPath="$PROJECT_DIR$/static/css/home.css" />
@@ -33,7 +33,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.734288">
+    <splitter split-orientation="horizontal" split-proportion="0.73428786">
       <split-first>
         <leaf>
           <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
@@ -45,10 +45,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/catfacts/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="1" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+                <state line="87" column="33" selection-start="2903" selection-end="2903" vertical-scroll-proportion="0.7979798">
                   <folding>
                     <element signature="e#0#58#0" expanded="true" />
                   </folding>
@@ -59,7 +59,7 @@
           <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catfacts/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+                <state line="8" column="47" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -67,19 +67,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/css/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="50" selection-start="20" selection-end="66" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/css/home.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="9" selection-start="480" selection-end="480" vertical-scroll-proportion="0.73264784">
+                <state line="134" column="13" selection-start="2598" selection-end="2598" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -88,8 +79,37 @@
           <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/catfacts/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="63" selection-start="425" selection-end="425" vertical-scroll-proportion="-4.375">
+                <state line="50" column="39" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-16.875">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/catfacts/faq.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="39" selection-start="1779" selection-end="1779" vertical-scroll-proportion="-18.75">
+                  <folding>
+                    <element signature="n#style#0;n#p#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/catfacts/about.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="28" column="135" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-15.625">
+                  <folding>
+                    <element signature="n#style#0;n#h4#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h4#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h4#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h4#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -128,7 +148,7 @@
           <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$USER_HOME$/pyprojects/TestPoll/polls/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.63517916">
+                <state line="13" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.38085938">
                   <folding>
                     <element signature="e#0#54#0" expanded="true" />
                   </folding>
@@ -203,10 +223,12 @@
         <option value="$PROJECT_DIR$/catfacts/models.py" />
         <option value="$PROJECT_DIR$/static/css/temp.css" />
         <option value="$PROJECT_DIR$/catfactssite/settings.py" />
-        <option value="$PROJECT_DIR$/catfacts/urls.py" />
-        <option value="$PROJECT_DIR$/catfacts/views.py" />
-        <option value="$PROJECT_DIR$/templates/catfacts/home.html" />
         <option value="$PROJECT_DIR$/static/css/home.css" />
+        <option value="$PROJECT_DIR$/catfacts/urls.py" />
+        <option value="$PROJECT_DIR$/templates/catfacts/home.html" />
+        <option value="$PROJECT_DIR$/templates/catfacts/faq.html" />
+        <option value="$PROJECT_DIR$/templates/catfacts/about.html" />
+        <option value="$PROJECT_DIR$/catfacts/views.py" />
       </list>
     </option>
   </component>
@@ -242,9 +264,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,6 +362,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,6 +404,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/catfacts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/catfacts" />
     </key>
@@ -534,9 +559,14 @@
       <created>1355373311808</created>
       <updated>1355373311808</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated CSS and HTML a little. &#10;User info boxes are functional for my victims to add themselves now.&#10;TODO list made so project has an approximate endpoint.">
+      <created>1355875775361</created>
+      <updated>1355875775361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -558,13 +588,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-4" width="1309" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.67255217" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.32475883" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.66398716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21797931" sideWeight="0.66398716" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5003978" order="7" side_tool="true" content_ui="tabs" />
@@ -634,13 +665,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/pyprojects/TestPoll/polls/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="46" selection-end="80" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/catfacts/temp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="21" selection-start="2218" selection-end="2218" vertical-scroll-proportion="-0.625">
@@ -706,49 +730,67 @@
     </entry>
     <entry file="file://$USER_HOME$/pyprojects/TestPoll/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.63517916">
+        <state line="13" column="22" selection-start="498" selection-end="498" vertical-scroll-proportion="0.38085938">
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catfacts/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/catfacts/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="1" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+        <state line="28" column="135" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-15.625">
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catfacts/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/catfacts/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="33" column="39" selection-start="1779" selection-end="1779" vertical-scroll-proportion="-18.75">
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="50" selection-start="20" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catfacts/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="63" selection-start="425" selection-end="425" vertical-scroll-proportion="-4.375">
+        <state line="50" column="39" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-16.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="480" selection-end="480" vertical-scroll-proportion="0.73264784">
+        <state line="134" column="13" selection-start="2598" selection-end="2598" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catfacts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="47" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catfacts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="33" selection-start="2903" selection-end="2903" vertical-scroll-proportion="0.7979798">
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

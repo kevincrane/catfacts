@@ -20,12 +20,11 @@ def home(request):
 
 # FAQ page view
 def faq(request):
-#    return HttpResponse("This is my FAQ page!")
-    return render(request, 'catfacts/temp.html')
+    return render(request, 'catfacts/faq.html')
 
 # About page view
 def about(request):
-    return HttpResponse("This is my About page!")
+    return render(request, 'catfacts/about.html')
 
 
 # Add new user to models; POST method
@@ -81,10 +80,6 @@ def new_user(request):
 #   - Send POST request to unsubscribe.html with email address
 #   - HTML: $email has been unsubscribed!
 #   - view: load models where email=$email, set valid=false
-
-# TODO: Make FAQ and About page
-#   - Just copy/paste the HTML and rename
-#   - Use same CSS, H3 and p tags to make FAQ and About
 
 # TODO: Set up daily cron job
 #   - import model from Python
