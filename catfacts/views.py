@@ -1,5 +1,5 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.core.urlresolvers import reverse
 from random import choice
 from django.utils import timezone
@@ -29,7 +29,7 @@ def about(request):
 
 # Add new user to models; POST method
 def new_user(request):
-    PREV_PAGE = "catfacts/home.html"
+    PREV_PAGE = 'catfacts/home.html'
 
     # Try to read the user's name and contact method from POST
     try:
@@ -41,8 +41,6 @@ def new_user(request):
         return render(request, PREV_PAGE, {
             'error_message': "Make sure to enter your name and email/phone number.",
             })
-
-    # TODO: test what type of input this is
 
     # Add user to DB if applicable
     email_address = re.search(r"[^@]+@[^@]+\.[^@]+", user_contact)
@@ -57,9 +55,9 @@ def new_user(request):
 
     elif phone_number and len(phone_number.groups()) == 3:
         email_user = Phone_User(name=user_name,
-            phone=phone_number.group(1) + phone_number.group(2) + phone_number.group(3),
-            date_joined=timezone.now(),
-            valid=True)
+                                phone=phone_number.group(1) + phone_number.group(2) + phone_number.group(3),
+                                date_joined=timezone.now(),
+                                valid=True)
         email_user.save()
         return HttpResponseRedirect("/")
 

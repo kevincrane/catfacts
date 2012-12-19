@@ -1,1 +1,13 @@
-Temp README
+CatFacts Galore!
+- Kevin Crane
+
+Directories:
+catfactssite
+    catfacts        (main app directory)
+        management
+            commands(daily backend processes; through manage.py)
+    catfactssite    (Django boilerplate stuff that makes the actual site run)
+    static          (stuff that doesn't move; CSS and images mainly)
+    templates       (Django HTML templates)
+        catfacts    (templates for the CatFacts app)
+    - catfacts_db   (SQLite db that stores the site data)
