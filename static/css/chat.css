@@ -103,7 +103,7 @@ section #newuser-form {
 
 /* Main text body */
 #main-body {
-    width: 84%;
+    width: 824px;
     margin: auto;
 }
 #fact {
@@ -112,9 +112,9 @@ section #newuser-form {
     font-style: italic;
 }
 /*#main-body p:nth-child(4) {*/
-    /*padding-top: 25px;*/
-    /*line-height: 0;*/
-    /*margin-bottom: -5px;*/
+/*padding-top: 25px;*/
+/*line-height: 0;*/
+/*margin-bottom: -5px;*/
 /*}*/
 
 
@@ -136,3 +136,41 @@ section #newuser-form {
     border-radius: 6px;
     padding: 0 16px;
 }
+
+
+
+
+form, p, span {
+    margin:0;
+    padding:0; }
+input { font:12px arial; }
+#wrapper, #loginform {
+    margin:0 auto;
+    padding-bottom:25px;
+    background: #69603f;
+    width:824px;
+    height: 324px;
+    border-radius: 6px;
+}
+#loginform { padding-top:18px; }
+#loginform p { margin: 5px; }
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    padding:10px;
+    color: black;
+    background:#fff;
+    height:250px;
+    width:784px;
+    border:1px solid #ACD8F0;
+    overflow:auto;
+}
+#usermsg {
+    margin-left: 9px;
+    width:512px;
+    border:1px solid #ACD8F0; }
+#submitmsg { width: 60px; }
+#menu { padding:12.5px 25px 12.5px 25px; }
+.welcome { float:left; }
+.logout { float:right; }
+.msgln { margin:0 0 2px 0; }
